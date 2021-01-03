@@ -1,7 +1,12 @@
 # `string` immutability: `C#` vs `C++`
-In this repo I am trying to show how `string` type differs between `C#` and `C++` when we talk about immutability. If you want to see the difference, please check 2 files of the repo:<br />
-[C# code](CSharpSamples/Program.cs)<br />
-[C++ code](CppSamples/CppSamples.cpp)<br />
+In this repo I am trying to show how `string` type differs between `C#` and `C++` when we talk about immutability. If you want to see the difference, please check 2 files of the repo:
+
+[C# code](CSharpSamples/Program.cs)
+
+[C++ code](CppSamples/CppSamples.cpp)
+
+Of course please feel free to get entire repo and try to compile it on your PC.
+
 # How to get object's reference in `C#`?
 In `C#` it is not recommended to work with `references` and `pointers` in your everyday work. Therefore I had to find a special way of displaying reference address. I was inspired by [this Stack Overflow answer](https://stackoverflow.com/a/10861731/13721565). I wrote a code similar to the first approach described in the answer and wrapped it in an <a href="https://github.com/edwardzieminski/String-immutability-test-CSharp-vs-Cpp/blob/master/CSharpSamples/RefHelper.cs">extension method</a> of `object` type, so you can get a reference as a `string` calling a method `Ref()` on any possible object. **Please note that this approach is unsafe!!** It also requires to enable unsafe code in the project. I used this only for demo purposes, but I would never used this in production code - I also do not recommend this to you.
 # What should I look at?
