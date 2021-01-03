@@ -55,7 +55,7 @@ void printComparison(const std::string &string1, const std::string &string2) {
         << "References are equal: " << (&string1 == &string2) << "\n\n";
 }
 
-// function taken from: https://stackoverflow.com/questions/2896600/how-to-replace-all-occurrences-of-a-character-in-string
+// function taken from: https://stackoverflow.com/a/24315631/13721565
 std::string ReplaceAll(std::string str, const std::string& from, const std::string& to) {
     size_t start_pos = 0;
     while ((start_pos = str.find(from, start_pos)) != std::string::npos) {
