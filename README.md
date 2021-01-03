@@ -16,7 +16,7 @@ If you want to understand the difference between `C#` and `C++` using my samples
 # Take-aways
 * `C++`: Reference is 'attached' to a string variable. If you change a value of a string variable - the reference remains the same, the value changes.
 * `C++`: `string`s in `C++` are **mutable**!
-* `C#`: Reference is 'attached' to string value, but not always! The compiler seems to try achieve some performance optimization by attaching variables with the same value to the same memory address, but this is not done in each case.
+* `C#`: Reference is 'attached' to string value, but not always! The compiler seems to try achieve some memory optimization by attaching variables with the same value to the same memory address, but this is not done in each case.
 * `C#`: If you assign the same string value to 2 separate variables - both variables will get the same reference. But as you can see in my samples - sometimes you may face a situation in which you have 2 string objects with the same value, but with different reference.
 * `C#`: If you change a value of a string variable - new string object is going to be created and variable is going to be reattached to this new object.
 * `C#`: Even though in C# `string` is a `reference type`, it acts as `value type` - i.e. `string.Replace(...)` method does not modify the object on which the method is called. It *returns* a new string object instead.
